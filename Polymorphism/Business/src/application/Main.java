@@ -51,14 +51,14 @@ public class Main {
             System.out.println(emp.toString());
         }
 
-        System.out.println();
-        System.out.println("TOTAL TAXES: ");
-
         double total = 0.00d;
         for(Empresa p : list){
             total += p.tax();
-            System.out.println(total);
         }
+
+        System.out.println();
+        System.out.printf("TOTAL TAXES: $ %.2f",total);
+
 
         sc.close();
     }
